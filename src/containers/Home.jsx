@@ -1,10 +1,12 @@
 import React from "react";
-import Products from "../components/Products"
-
+import Products from "../components/Products";
+import "../styles/components/Globals.styl";
 const Home = () => {
-    return (
-        <Products/>
-    )
-}
+  return (
+    <main className="Main wrapper">
+      <Products />
+    </main>
+  );
+};
 
-export default Home
+export default Home;

@@ -1,0 +1,19 @@
+@import './Vars.styl'
+
+.Product
+    padding: 10px
+    text-align: center
+    box-shadow 0 0 10px 0 #cfcfcf
+    border-radius 15px
+    overflow hidden
+    &:hover
+        transform scale(1.05)
+        box-shadow 0 0 10px 0 colorTwo
+        transition all 500ms
+.Product-name
+    text-transform: lowercase
+    color colorOne
+    &::first-letter
+        text-transform uppercase
+.Product-price
+    margin-bottom 10px

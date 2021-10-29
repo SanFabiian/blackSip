@@ -1,0 +1,35 @@
+@import './Vars.styl'
+.Form-address
+    border solid 1px colorOne
+.Form-address-head
+    height: 50px
+    border-bottom solid 2px colorOne
+    display: flex
+    align-items: center
+    padding: 0 30px
+    h2
+        text-transform uppercase
+.Form-address-body
+    padding: 30px
+    display grid
+    grid-template-columns repeat(auto-fill,minmax(180px,1fr))
+    gap 10px
+.Form-item
+    display: flex
+    align-items: center
+    i
+        fullCenter()
+        background: colorOne
+        color white
+        font-size 20px
+        width: 40px
+        height 40px
+    select,
+    input
+        width 100%
+        height: 40px
+        padding: 0 20px
+        border solid 1px grey
+        color grey
+        &::placeholder
+            color grey
